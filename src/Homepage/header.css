@@ -1,0 +1,93 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e7ebf0;
+}
+
+.header-container {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #eef5ff;
+  font-size: 19px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.5px;
+  color: #111827;
+}
+
+.brand-name span { color: #2563eb; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  color: #334155;
+  font-weight: 500;
+}
+
+.nav-links a:hover { color: #2563eb; }
+
+.login-btn {
+  border: 0;
+  background: #2563eb;
+  color: #fff;
+  padding: 11px 23px;
+  border-radius: 9px;
+  font-weight: 700;
+}
+
+.login-btn:hover { background: #1d4ed8; }
+
+.language-btn {
+  border: 1px solid #dbe2ea;
+  background: #fff;
+  color: #334155;
+  padding: 10px 13px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.language-btn:hover {
+  border-color: #93c5fd;
+  color: #2563eb;
+  background: #f8fbff;
+}
+
+@media (max-width: 760px) {
+  .header-container { width: min(100% - 28px, 1280px); height: 70px; }
+  .nav-links { gap: 12px; }
+  .nav-links a { display: none; }
+  .brand-name { font-size: 18px; }
+  .language-btn { padding: 9px 10px; }
+}
+
+.brand-home-button { border:0; background:transparent; cursor:pointer; padding:0; }
